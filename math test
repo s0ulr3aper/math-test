@@ -1,0 +1,67 @@
+#include<iostream.h>
+
+#include<stdlib.h>
+
+
+int main() 
+{
+	
+int i,a1,a2,a3,a4,ans,lv;
+	
+char ch;
+	
+cout<<"Choose the difficulty level easy(e)/hard(h)"<<endl;
+	
+cin>>ch;
+	
+ if(ch=='e')
+	
+lv=10;
+	
+else if(ch=='h')
+	
+lv=100;
+	    
+for(i=0;i<10;++i)
+	
+    {
+	    a1=random(lv);
+
+	    a2=random(lv);
+
+	    a3=random(lv);
+
+	    a4=random(lv);
+
+	    cout<<"What is the sum of numbers given below"<<endl;
+
+	    cout<<a1;
+            cout<<",";
+     
+	    cout<<a2;
+            cout<<",";
+	    cout<<a3;
+            cout<<",";
+
+	    cout<<a4;
+
+            cout<<"=";
+	    cin>>ans;
+
+	    if(ans==a1+a2+a3+a4)
+
+	    cout<<"Your answer is correct"<<endl;
+
+	    else
+
+	   { cout<<"Your answer is wrong, the correct answer is "<<endl;
+
+	   cout<<a1+a2+a3+a4<<endl;
+
+	   }
+
+	    
+	    }
+
+	return 0;
+}
